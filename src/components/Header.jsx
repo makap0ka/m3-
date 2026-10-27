@@ -1,6 +1,5 @@
-
 import { Link } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import { useCart } from "./CartContext";
 
 function Header() {
   const { totalItems } = useCart();
@@ -8,7 +7,7 @@ function Header() {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        TechStore
+        TikTok Shop
       </Link>
 
       <nav>
